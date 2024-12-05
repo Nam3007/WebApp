@@ -1,0 +1,73 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(#30cfd0, #330867);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    color: #00ccff;
+    text-shadow: #2a3085 2px 5px 2px;
+    font-family: Stroke;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+input{
+    padding: 5px;
+    margin:10px;
+    border-radius: 10px;
+    border: none;
+    width: 400px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    display: block;
+}
+.resultBox {
+    position: absolute; 
+    left: 0;           
+    width: 100%;        
+    overflow-y: auto;   
+    max-height: 500px;  
+    z-index: 10;       
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;
+}
+.resultBox::-webkit-scrollbar { /* For Chrome */
+    display: none;
+}
+
+.result{
+    padding: 1px;
+    border-bottom: #2077e9 2px solid;
+}
+.result:hover{
+    background-color: #2077e9;
+    color: rgb(236, 242, 245);
+}
+.result .Lyrics{
+    display: block;
+    padding: 10px;
+    background-color: #2077e9;
+    color: rgb(236, 242, 245);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+
